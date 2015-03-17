@@ -18,6 +18,7 @@
 
 package com.fortysevendeg.swipelistview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
@@ -29,7 +30,6 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-
 import java.util.List;
 
 /**
@@ -168,6 +168,7 @@ public class SwipeListView extends ListView {
 	 * @param attrs
 	 *            AttributeSet
 	 */
+	@SuppressLint({ "Recycle", "ClickableViewAccessibility" })
 	private void init(AttributeSet attrs) {
 
 		int swipeMode = SWIPE_MODE_BOTH;
